@@ -32,23 +32,12 @@
     </ol>
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-        <div class="item active" style="width: 1920px; height:400px">
-            <img src="/img/slide1.png" alt="..." style="width: 100%">
+        <?php if(is_array($adlist)): $k = 0; $__LIST__ = $adlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$voad): $mod = ($k % 2 );++$k;?><div <?php if($k == 1): ?>class="item active"<?php else: ?> class="item"<?php endif; ?> style="width: 1920px; height:400px">
+            <img src="/test/<?php echo ($voad['ad_img']); ?>" alt="..." style="width: 100%">
             <div class="carousel-caption">
 
             </div>
-        </div>
-        <div class="item"  style="width: 1920px; height: 400px">
-            <img src="/img/slide1.png" alt="..." style="width: 100%">
-            <div class="carousel-caption">
-
-            </div>
-        </div>
-        <div class="item"  style="width: 1920px; height: 400px">
-            <img src="/img/slide1.png" alt="..." style="width: 100%">
-            <div class="carousel-caption">
-            </div>
-        </div>
+        </div><?php endforeach; endif; else: echo "" ;endif; ?>
     </div>
 
     <!-- Controls -->

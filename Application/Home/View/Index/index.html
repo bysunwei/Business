@@ -32,23 +32,14 @@
     </ol>
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-        <div class="item active" style="width: 1920px; height:400px">
-            <img src="__ROOT__/img/slide1.png" alt="..." style="width: 100%">
+        <volist name="adlist" id="voad" key="k">
+        <div <if condition="$k eq 1">class="item active"<else/> class="item"</if> style="width: 1920px; height:400px">
+            <img src="__ROOT__/test/{$voad['ad_img']}" alt="..." style="width: 100%">
             <div class="carousel-caption">
 
             </div>
         </div>
-        <div class="item"  style="width: 1920px; height: 400px">
-            <img src="__ROOT__/img/slide1.png" alt="..." style="width: 100%">
-            <div class="carousel-caption">
-
-            </div>
-        </div>
-        <div class="item"  style="width: 1920px; height: 400px">
-            <img src="__ROOT__/img/slide1.png" alt="..." style="width: 100%">
-            <div class="carousel-caption">
-            </div>
-        </div>
+        </volist>
     </div>
 
     <!-- Controls -->

@@ -10,4 +10,7 @@ return array(
     'DB_PORT'   => 3306, // 端口
     'DB_PREFIX' => 'peter_', // 数据库表前缀
     'DB_CHARSET'=> 'utf8', // 字符集
+/*    'TMPL_PARSE_STRING'=>array(
+        '__UPLOAD__'=>'/Uploads',
+    )*/
 );

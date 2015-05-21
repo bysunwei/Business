@@ -293,31 +293,31 @@
                             <ul id="bjui-tree0" class="ztree ztree_main" data-toggle="ztree" data-on-click="MainMenuClick" data-expand-all="true">
                                 <li data-id="1" data-pid="0" data-faicon="th-large">首页内容设置</li>
                                 <li data-id="10" data-pid="1" data-url="/index.php/Admin/Inner/nav" data-tabid="inner-nav" data-faicon="hand-o-up">导航</li>
-               <!--                 <li data-id="11" data-pid="1" data-url="form-input.html" data-tabid="form-input" data-faicon="terminal">文本框</li>
-                                <li data-id="12" data-pid="1" data-url="form-select.html" data-tabid="form-select" data-faicon="caret-square-o-down">下拉选择框</li>
-                                <li data-id="13" data-pid="1" data-url="form-checkbox.html" data-tabid="table" data-faicon="check-square-o">复选、单选框</li>
-                                <li data-id="14" data-pid="1" data-url="form.html" data-tabid="form" data-faicon="list">表单综合演示</li>
-                                <li data-id="2" data-pid="0">表格</li>
-                                <li data-id="20" data-pid="2" data-url="table.html" data-tabid="table">普通表格</li>
-                                <li data-id="21" data-pid="2" data-url="table-fixed.html" data-tabid="table-fixed">固定表头表格</li>
-                                <li data-id="22" data-pid="2" data-url="table-edit.html" data-tabid="table-edit">可编辑表格</li>
-                                <li data-id="3" data-pid="0">datagrid (beta)</li>
-                                <li data-id="31" data-pid="3" data-url="datagrid-convertable.html" data-tabid="datagrid-convertable">转换普通表格</li>
-                                <li data-id="32" data-pid="3" data-url="datagrid-demo.html" data-tabid="datagrid-demo">完整示例</li>
-                                <li data-id="33" data-pid="3" data-url="datagrid-datatype.html" data-tabid="datagrid-datatype">三种数据类型</li>
-                                <li data-id="4" data-pid="0">弹出窗口</li>
-                                <li data-id="40" data-pid="4" data-url="dialog.html" data-tabid="dialog">弹出窗口</li>
-                                <li data-id="41" data-pid="4" data-url="alert.html" data-tabid="alert">信息提示</li>
-                                <li data-id="5" data-pid="0">图形报表</li>
-                                <li data-id="50" data-pid="5" data-url="highcharts.html" data-tabid="chart">Highcharts图表</li>
-                                <li data-id="50" data-pid="5" data-url="echarts.html" data-tabid="echarts">ECharts图表</li>
-                                <li data-id="6" data-pid="0">框架组件</li>
-                                <li data-id="61" data-pid="6" data-url="tabs.html" data-tabid="tabs">选项卡</li>
-                                <li data-id="7" data-pid="0">其他插件</li>
-                                <li data-id="71" data-pid="7" data-url="ztree.html" data-tabid="ztree">zTree</li>
-                                <li data-id="72" data-pid="7" data-url="ztree-select.html" data-tabid="ztree-select">zTree下拉选择</li>
-                                <li data-id="8" data-pid="0">综合应用</li>
-                                <li data-id="80" data-pid="8" data-url="table-layout.html" data-tabid="table-layout">局部刷新1</li>-->
+                                <li data-id="11" data-pid="1" data-url="/index.php/Admin/Inner/ad" data-tabid="inner-ad" data-faicon="link">广告</li>
+                                <!--                  <li data-id="12" data-pid="1" data-url="form-select.html" data-tabid="form-select" data-faicon="caret-square-o-down">下拉选择框</li>
+                                                 <li data-id="13" data-pid="1" data-url="form-checkbox.html" data-tabid="table" data-faicon="check-square-o">复选、单选框</li>
+                                                 <li data-id="14" data-pid="1" data-url="form.html" data-tabid="form" data-faicon="list">表单综合演示</li>
+                                                 <li data-id="2" data-pid="0">表格</li>
+                                                 <li data-id="20" data-pid="2" data-url="table.html" data-tabid="table">普通表格</li>
+                                                 <li data-id="21" data-pid="2" data-url="table-fixed.html" data-tabid="table-fixed">固定表头表格</li>
+                                                 <li data-id="22" data-pid="2" data-url="table-edit.html" data-tabid="table-edit">可编辑表格</li>
+                                                 <li data-id="3" data-pid="0">datagrid (beta)</li>
+                                                 <li data-id="31" data-pid="3" data-url="datagrid-convertable.html" data-tabid="datagrid-convertable">转换普通表格</li>
+                                                 <li data-id="32" data-pid="3" data-url="datagrid-demo.html" data-tabid="datagrid-demo">完整示例</li>
+                                                 <li data-id="33" data-pid="3" data-url="datagrid-datatype.html" data-tabid="datagrid-datatype">三种数据类型</li>
+                                                 <li data-id="4" data-pid="0">弹出窗口</li>
+                                                 <li data-id="40" data-pid="4" data-url="dialog.html" data-tabid="dialog">弹出窗口</li>
+                                                 <li data-id="41" data-pid="4" data-url="alert.html" data-tabid="alert">信息提示</li>
+                                                 <li data-id="5" data-pid="0">图形报表</li>
+                                                 <li data-id="50" data-pid="5" data-url="highcharts.html" data-tabid="chart">Highcharts图表</li>
+                                                 <li data-id="50" data-pid="5" data-url="echarts.html" data-tabid="echarts">ECharts图表</li>
+                                                 <li data-id="6" data-pid="0">框架组件</li>
+                                                 <li data-id="61" data-pid="6" data-url="tabs.html" data-tabid="tabs">选项卡</li>
+                                                 <li data-id="7" data-pid="0">其他插件</li>
+                                                 <li data-id="71" data-pid="7" data-url="ztree.html" data-tabid="ztree">zTree</li>
+                                                 <li data-id="72" data-pid="7" data-url="ztree-select.html" data-tabid="ztree-select">zTree下拉选择</li>
+                                                 <li data-id="8" data-pid="0">综合应用</li>
+                                                 <li data-id="80" data-pid="8" data-url="table-layout.html" data-tabid="table-layout">局部刷新1</li>-->
                             </ul>
                         </div>
                     </div>
@@ -427,6 +427,12 @@
                                         </thead>
                                         <tbody>
                                         <tr>
+                                            <td>1.2 beta</td>
+                                            <td>2015.05.21</td>
+                                            <td>网站后台登陆 退出功能</td>
+                                            <td><button type="button" class="btn btn-info">重要</button></td>
+                                        </tr>
+                                        <tr>
                                             <td>1.1</td>
                                             <td>2015.05.20</td>
                                             <td>创建畅哲 管理后台 整合企业网站 </td>
@@ -437,9 +443,7 @@
                                             <td>2015.04.21</td>
                                             <td>创建畅哲企业网站</td>
                                             <td><button type="button" class="btn btn-info">重要</button></td>
-
                                         </tr>
-
                                         </tbody>
                                     </table>
                                 </div>

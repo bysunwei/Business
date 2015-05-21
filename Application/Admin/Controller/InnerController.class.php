@@ -2,7 +2,7 @@
 namespace Admin\Controller;
 use Think\Controller;
 use Org\Util\TableTree;
-class InnerController extends Controller {
+class InnerController extends CommonController {
     public function nav(){
         $m=M("nav");
         $navlist=$m->select();

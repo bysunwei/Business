@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
     <title>畅哲科技登陆</title>
-    <link href="__PUBLIC__/BJUI/themes/css/bootstrap.css" rel="stylesheet">
-    <link href="__PUBLIC__/my/css/login.css" rel="stylesheet">
+    <link href="/Public/BJUI/themes/css/bootstrap.css" rel="stylesheet">
+    <link href="/Public/my/css/login.css" rel="stylesheet">
 <style>
 
 
@@ -42,7 +42,7 @@
 
                         <!-- Button -->
                         <div class="col-sm-12 controls">
-                            <span class="loginerr ">{$errorinfo}</span>
+                            <span class="loginerr "><?php echo ($errorinfo); ?></span>
                             <button type="submit" href="#" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-log-in"></i> 进入</button>
                         </div>
                     </div>

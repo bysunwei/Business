@@ -61,7 +61,7 @@
         <?php if(is_array($navlist)): $i = 0; $__LIST__ = $navlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vonav): $mod = ($i % 2 );++$i;?><tr data-id="<?php echo ($vonav["id"]); ?>">
             <td align="center"><?php echo ($vonav["id"]); ?></td>
             <td><?php echo ($vonav["name"]); ?></td>
-            <td><?php if($vonav["isshow"] == 0): ?>不显示<?php else: ?>显示<?php endif; ?></td>
+            <td><?php if($vonav["isshow"] == 0): ?>隐藏<?php else: ?>显示<?php endif; ?></td>
             <td><?php echo ($vonav["url"]); ?></td>
             <td><input type="checkbox" name="ids" data-toggle="icheck" value="<?php echo ($vonav["id"]); ?>"></td>
             <td>

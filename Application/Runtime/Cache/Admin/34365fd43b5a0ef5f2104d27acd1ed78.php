@@ -44,6 +44,9 @@
             <input type="text" value="" name="mobile" size="10">
         </div>
     </form>-->
+    <div style="float: right">
+        <a href="/index.php/Admin/Inner/insertnav" class="btn btn-blue" data-toggle="dialog" data-title="新增导航">新增</a>
+    </div>
 </div>
 <div class="bjui-pageContent">
     <table class="table table-bordered table-hover table-striped table-top" data-selected-multi="true">

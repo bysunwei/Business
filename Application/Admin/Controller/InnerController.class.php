@@ -161,4 +161,40 @@ class InnerController extends CommonController {
             }
         }
     }
+    public function insertnav(){
+        $m=M("nav");
+        $navlist=$m->select();
+        import('ORG.Util.TableTree');
+        $tableTree=new TableTree;
+        $tableTree->tree($navlist);
+        $this->navlist=$tableTree->getArray();
+        $this->display();
+    }
+    public function addnav(){
+        $arr = array (
+            'navTabId'=>"inner-nav",
+            'rel'=>"",
+            "callbackType"=>"closeCurrent",
+            "forwardUrl"=>"",
+            'confirMsg'=>""
+        );
+        $nav=M("Nav");
+        if(!$nav->create())
+        {
+            $arr["statusCode"]=200;
+            $arr["message"]=$nav->getError();
+            $this->ajaxReturn($arr);
+        }else{
+            if($nav->add())
+            {
+                $arr["statusCode"]=200;
+                $arr["message"]="新导航添加成功";
+                $this->ajaxReturn($arr);
+            }else{
+                $arr["statusCode"]=300;
+                $arr["message"]="新导航添加失败";
+                $this->ajaxReturn($arr);
+            }
+        }
+    }
 }

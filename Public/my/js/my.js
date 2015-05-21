@@ -1,20 +1,21 @@
 $(function(){
     var timer_serivce=null;
     var timer_value=null;
-    $('#serviceid').mouseover(function(){
-        $('.service').css('display','block');
+    $('#dropmenu10').mouseover(function(){
+
+        $('.service10').css('display','block');
     });
-    $('#serviceid').mouseout(function(){
+    $('#dropmenu10').mouseout(function(){
         timer_serivce=setTimeout(function(){
           //  $('.service').css('display','none');
         },1000)
     });
-    $(".service").mouseover(function(){
+    $(".service10").mouseover(function(){
         clearTimeout(timer_serivce);
-        $('.service').css('display','block');
+        $('.service10').css('display','block');
     });
-    $(".service").mouseout(function(){
-        $('.service').css('display','none');
+    $(".service10").mouseout(function(){
+        $('.service10').css('display','none');
     });
     $('#valueid').mouseover(function(){
         $('.value').css('display','block');

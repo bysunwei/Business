@@ -1,10 +1,15 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
+use Org\Util\TableTree;
 class InnerController extends Controller {
     public function nav(){
         $m=M("nav");
-        $this->navlist=$m->select();
+        $navlist=$m->select();
+        import('ORG.Util.TableTree');
+        $tableTree=new TableTree;
+        $tableTree->tree($navlist);
+        $this->navlist=$tableTree->getArray();
         $this->display();
     }
     public function editnav(){

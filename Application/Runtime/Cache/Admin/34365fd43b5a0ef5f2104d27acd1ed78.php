@@ -51,7 +51,7 @@
         <tr>
             <th data-order-field="id" align="center">编号</th>
             <th>名称</th>
-            <th>显示</th>
+            <th>显示/隐藏</th>
             <th data-order-field="sex">链接地址</th>
             <th width="26"><input type="checkbox" class="checkboxCtrl" data-group="ids" data-toggle="icheck"></th>
             <th width="100">操作</th>
@@ -62,7 +62,7 @@
             <td align="center"><?php echo ($vonav["id"]); ?></td>
             <td><?php echo ($vonav["name"]); ?></td>
             <td><?php if($vonav["isshow"] == 0): ?>不显示<?php else: ?>显示<?php endif; ?></td>
-            <td>index.html</td>
+            <td><?php echo ($vonav["url"]); ?></td>
             <td><input type="checkbox" name="ids" data-toggle="icheck" value="<?php echo ($vonav["id"]); ?>"></td>
             <td>
                 <a href="/index.php/Admin/Inner/editnav?id=<?php echo ($vonav["id"]); ?>" class="btn btn-green" data-toggle="dialog" data-id="form" data-reload-warn="本页已有打开的内容，确定将刷新本页内容，是否继续？" data-title="编辑-<?php echo ($vonav["name"]); ?>">编辑</a>

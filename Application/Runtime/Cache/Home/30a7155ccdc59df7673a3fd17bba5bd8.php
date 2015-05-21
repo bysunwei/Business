@@ -14,8 +14,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav ">
-                <?php if(is_array($navlist)): $k = 0; $__LIST__ = $navlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vonav): $mod = ($k % 2 );++$k;?><li><a href="/index.php/Home/index.html"><?php echo ($vonav["name"]); ?> <span class="sr-only">(current)</span></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
-                <!--<li><a href="#">新闻资讯</a></li>
+                <?php if(is_array($navlist)): $k = 0; $__LIST__ = $navlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vonav): $mod = ($k % 2 );++$k;?><li><a href="/index.php/Home/index.html" id="dropmenu<?php echo ($vonav["id"]); ?>"><?php echo ($vonav["name"]); ?> <span class="sr-only">(current)</span></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+            <!--    <li><a href="#">新闻资讯</a></li>
                 <li><a href="#" id="serviceid">产品应用</a></li>
                 &lt;!&ndash;<li><a href="#" id="valueid">价值</a></li>&ndash;&gt;
                 <li><a href="#">合作伙伴</a></li>
@@ -24,32 +24,23 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
-<div class="eject service">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-lg-offset-2">
-                <p class="p1"><a href="2.html">CT-MES制造业生产执行系统</a></p>
-                <ul>
-                    <li><a href="###">CT-SPC产品质量控制系统</a></li>
-                    <li><a href="###">CT-ERP制造业精细化管理系统</a></li>
-                    <li><a href="###">CT-QTS制造业基于二微码/RFID产品溯源系统</a></li>
-                    <li><a href="###">CT-WMS制造业车间物料管理系统</a></li>
-                    <li><a href="###">CT- APP制造业设备维修联网系统</a></li>
-                    <li><a href="###">CT-LAB制造业产品测试实验室MES系统</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-lg-offset-1">
-                <p class="p2"><a href="3.html">CT-VR制造业虚拟仿真系统</a></p>
-                <ul>
-                    <li><a href="###">基于unity-3D交互仿真系统</a></li>
-                    <li><a href="###">基于VENTUZ三维实时数据监控展示系统</a></li>
+<?php if(is_array($dropnav)): $i = 0; $__LIST__ = $dropnav;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vodrop): $mod = ($i % 2 );++$i;?><div class="eject hideinner service<?php echo ($vodrop["id"]); ?>" >
+        <div class="container">
+            <div class="row">
+                <?php if(is_array($vodrop['subitem'])): $i = 0; $__LIST__ = $vodrop['subitem'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sub1): $mod = ($i % 2 );++$i; if($sub1['isshow'] == '0'): else: ?>
+                            <div class="col-lg-4 col-lg-offset-2">
+                                <p class="p1"><a href="2.html"><?php echo ($sub1['name']); ?></a></p>
+                                <ul>
+                                    <?php echo (getdropinner($sub1["id"])); ?>
+                                </ul>
+                            </div><?php endif; endforeach; endif; else: echo "" ;endif; ?>
 
-                </ul>
+
             </div>
         </div>
-    </div>
-</div>
-<div class="eject value">
+    </div><?php endforeach; endif; else: echo "" ;endif; ?>
+
+<div class="eject value" style="display: none">
     <div class="container">
         <div class="row">
             <div class="col-lg-2 col-lg-offset-2">

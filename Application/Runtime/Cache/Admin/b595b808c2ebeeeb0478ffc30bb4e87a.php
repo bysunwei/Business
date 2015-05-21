@@ -145,10 +145,10 @@
     <link href="doc/doc.css" rel="stylesheet">
     <script type="text/javascript">
         $(function(){
-       /*     SyntaxHighlighter.config.clipboardSwf = '/js/syntaxhighlighter-2.1.382/scripts/clipboard.swf'
+           SyntaxHighlighter.config.clipboardSwf = '/js/syntaxhighlighter-2.1.382/scripts/clipboard.swf'
             $(document).on(BJUI.eventType.initUI, function(e) {
                 SyntaxHighlighter.highlight();
-            })*/
+            })
         })
     </script>
     <!-- for doc end -->
@@ -191,91 +191,91 @@
         </ul>
     </nav>
 </header>
-<!--<div id="bjui-hnav">
-    <button type="button" class="bjui-hnav-toggle btn-default" data-toggle="collapse" data-target="#bjui-hnav-navbar">
-        <i class="fa fa-bars"></i>
-    </button>
-    <ul id="bjui-hnav-navbar">
-        <li style="width:204px;"><a>欢迎您，超级管理员！</a></li>
-        <li><a href="javascript:;" data-toggle="slidebar"><i class="fa fa-check-square-o"></i> 表单元素</a>
-            <ul id="bjui-hnav-tree1" class="ztree ztree_main" data-toggle="ztree" data-on-click="MainMenuClick" data-expand-all="true" data-noinit="true">
-                <li data-id="1" data-pid="0" data-faicon="th-large">表单元素</li>
-                <li data-id="10" data-pid="1" data-url="form-button.html" data-tabid="form-button" data-faicon="hand-o-up">按钮</li>
-                <li data-id="11" data-pid="1" data-url="form-input.html" data-tabid="form-input" data-faicon="terminal">文本框</li>
-                <li data-id="12" data-pid="1" data-url="form-select.html" data-tabid="form-select" data-faicon="caret-square-o-down">下拉选择框</li>
-                <li data-id="13" data-pid="1" data-url="form-checkbox.html" data-tabid="table" data-faicon="check-square-o">复选、单选框</li>
-                <li data-id="14" data-pid="1" data-url="form.html" data-tabid="form" data-faicon="list">表单综合演示</li>
-            </ul>
-        </li>
-        <li><a href="javascript:;" data-toggle="slidebar"><i class="fa fa-table"></i> 表格</a>
-            <ul id="bjui-hnav-tree2" class="ztree ztree_main" data-toggle="ztree" data-on-click="MainMenuClick" data-expand-all="true" data-noinit="true">
-                <li data-id="2" data-pid="0">表格</li>
-                <li data-id="20" data-pid="2" data-url="table.html" data-tabid="table">普通表格</li>
-                <li data-id="21" data-pid="2" data-url="table-fixed.html" data-tabid="table-fixed">固定表头表格</li>
-                <li data-id="22" data-pid="2" data-url="table-edit.html" data-tabid="table-edit">可编辑表格</li>
-            </ul>
-        </li>
-        <li><a href="javascript:;" data-toggle="slidebar"><i class="fa fa-table"></i> Datagrid(beta)</a>
-            <ul id="bjui-hnav-tree-datagrid" class="ztree ztree_main" data-toggle="ztree" data-on-click="MainMenuClick" data-expand-all="true" data-noinit="true">
-                <li data-id="3" data-pid="0">datagrid (beta)</li>
-                <li data-id="31" data-pid="3" data-url="datagrid-convertable.html" data-tabid="datagrid-convertable">转换普通表格</li>
-                <li data-id="32" data-pid="3" data-url="datagrid-demo.html" data-tabid="datagrid-demo">完整示例</li>
-                <li data-id="33" data-pid="3" data-url="datagrid-datatype.html" data-tabid="datagrid-datatype">三种数据类型</li>
-            </ul>
-        </li>
-        <li><a href="javascript:;" data-toggle="slidebar"><i class="fa fa-plane"></i> 弹出窗口</a>
-            <ul id="bjui-hnav-tree4" class="ztree ztree_main" data-toggle="ztree" data-on-click="MainMenuClick" data-expand-all="true" data-noinit="true">
-                <li data-id="4" data-pid="0">弹出窗口</li>
-                <li data-id="40" data-pid="4" data-url="dialog.html" data-tabid="dialog">弹出窗口</li>
-                <li data-id="41" data-pid="4" data-url="alert.html" data-tabid="alert">信息提示</li>
-            </ul>
-        </li>
-        <li><a href="javascript:;" data-toggle="slidebar"><i class="fa fa-image"></i> 图形报表</a>
-            <ul id="bjui-hnav-tree5" class="ztree ztree_main" data-toggle="ztree" data-on-click="MainMenuClick" data-expand-all="true" data-noinit="true">
-                <li data-id="5" data-pid="0">图形报表</li>
-                <li data-id="51" data-pid="5" data-url="highcharts.html" data-tabid="chart">Highcharts图表</li>
-                <li data-id="52" data-pid="5" data-url="echarts.html" data-tabid="echarts">ECharts图表</li>
-            </ul>
-        </li>
-        <li><a href="javascript:;" data-toggle="slidebar"><i class="fa fa-coffee"></i> 框架组件</a>
-            <ul id="bjui-hnav-tree6" class="ztree ztree_main" data-toggle="ztree" data-on-click="MainMenuClick" data-expand-all="true" data-noinit="true">
-                <li data-id="6" data-pid="0">框架组件</li>
-                <li data-id="61" data-pid="6" data-url="tabs.html" data-tabid="tabs">选项卡</li>
-            </ul>
-        </li>
-        <li><a href="javascript:;" data-toggle="slidebar"><i class="fa fa-bug"></i> 其他插件</a>
-            <ul id="bjui-hnav-tree6" class="ztree ztree_main" data-toggle="ztree" data-on-click="MainMenuClick" data-expand-all="true" data-noinit="true">
-                <li data-id="7" data-pid="0">其他插件</li>
-                <li data-id="71" data-pid="7" data-url="ztree.html" data-tabid="ztree">zTree</li>
-                <li data-id="72" data-pid="7" data-url="ztree-select.html" data-tabid="ztree-select">zTree下拉选择</li>
-            </ul>
-        </li>
-        <li><a href="javascript:;" data-toggle="slidebar"><i class="fa fa-database"></i> 综合应用</a>
-            <ul id="bjui-hnav-tree8" class="ztree ztree_main" data-toggle="ztree" data-on-click="MainMenuClick" data-expand-all="true" data-noinit="true">
-                <li data-id="8" data-pid="0">综合应用</li>
-                <li data-id="80" data-pid="8" data-url="table-layout.html" data-tabid="table-layout">局部刷新1</li>
-            </ul>
-        </li>
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cog"></i> 系统设置 <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-                <li><a href="#">角色权限</a></li>
-                <li><a href="#">用户列表</a></li>
-                <li class="divider"></li>
-                <li><a href="#">关于我们</a></li>
-                <li class="divider"></li>
-                <li><a href="#">友情链接</a></li>
-            </ul>
-        </li>
-    </ul>
-    <form class="hnav-form">
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search...">
-                <span class="input-group-btn">
-                    <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
-                </span>
-        </div>
-    </form>
-</div>-->
+<!--<div id="bjui-hnav">-->
+    <!--<button type="button" class="bjui-hnav-toggle btn-default" data-toggle="collapse" data-target="#bjui-hnav-navbar">-->
+        <!--<i class="fa fa-bars"></i>-->
+    <!--</button>-->
+    <!--<ul id="bjui-hnav-navbar">-->
+        <!--<li style="width:204px;"><a>欢迎您，超级管理员！</a></li>-->
+        <!--<li><a href="javascript:;" data-toggle="slidebar"><i class="fa fa-check-square-o"></i> 表单元素</a>-->
+            <!--<ul id="bjui-hnav-tree1" class="ztree ztree_main" data-toggle="ztree" data-on-click="MainMenuClick" data-expand-all="true" data-noinit="true">-->
+                <!--<li data-id="1" data-pid="0" data-faicon="th-large">表单元素</li>-->
+                <!--<li data-id="10" data-pid="1" data-url="form-button.html" data-tabid="form-button" data-faicon="hand-o-up">按钮</li>-->
+                <!--<li data-id="11" data-pid="1" data-url="form-input.html" data-tabid="form-input" data-faicon="terminal">文本框</li>-->
+                <!--<li data-id="12" data-pid="1" data-url="form-select.html" data-tabid="form-select" data-faicon="caret-square-o-down">下拉选择框</li>-->
+                <!--<li data-id="13" data-pid="1" data-url="form-checkbox.html" data-tabid="table" data-faicon="check-square-o">复选、单选框</li>-->
+                <!--<li data-id="14" data-pid="1" data-url="form.html" data-tabid="form" data-faicon="list">表单综合演示</li>-->
+            <!--</ul>-->
+        <!--</li>-->
+        <!--<li><a href="javascript:;" data-toggle="slidebar"><i class="fa fa-table"></i> 表格</a>-->
+            <!--<ul id="bjui-hnav-tree2" class="ztree ztree_main" data-toggle="ztree" data-on-click="MainMenuClick" data-expand-all="true" data-noinit="true">-->
+                <!--<li data-id="2" data-pid="0">表格</li>-->
+                <!--<li data-id="20" data-pid="2" data-url="table.html" data-tabid="table">普通表格</li>-->
+                <!--<li data-id="21" data-pid="2" data-url="table-fixed.html" data-tabid="table-fixed">固定表头表格</li>-->
+                <!--<li data-id="22" data-pid="2" data-url="table-edit.html" data-tabid="table-edit">可编辑表格</li>-->
+            <!--</ul>-->
+        <!--</li>-->
+        <!--<li><a href="javascript:;" data-toggle="slidebar"><i class="fa fa-table"></i> Datagrid(beta)</a>-->
+            <!--<ul id="bjui-hnav-tree-datagrid" class="ztree ztree_main" data-toggle="ztree" data-on-click="MainMenuClick" data-expand-all="true" data-noinit="true">-->
+                <!--<li data-id="3" data-pid="0">datagrid (beta)</li>-->
+                <!--<li data-id="31" data-pid="3" data-url="datagrid-convertable.html" data-tabid="datagrid-convertable">转换普通表格</li>-->
+                <!--<li data-id="32" data-pid="3" data-url="datagrid-demo.html" data-tabid="datagrid-demo">完整示例</li>-->
+                <!--<li data-id="33" data-pid="3" data-url="datagrid-datatype.html" data-tabid="datagrid-datatype">三种数据类型</li>-->
+            <!--</ul>-->
+        <!--</li>-->
+        <!--<li><a href="javascript:;" data-toggle="slidebar"><i class="fa fa-plane"></i> 弹出窗口</a>-->
+            <!--<ul id="bjui-hnav-tree4" class="ztree ztree_main" data-toggle="ztree" data-on-click="MainMenuClick" data-expand-all="true" data-noinit="true">-->
+                <!--<li data-id="4" data-pid="0">弹出窗口</li>-->
+                <!--<li data-id="40" data-pid="4" data-url="dialog.html" data-tabid="dialog">弹出窗口</li>-->
+                <!--<li data-id="41" data-pid="4" data-url="alert.html" data-tabid="alert">信息提示</li>-->
+            <!--</ul>-->
+        <!--</li>-->
+        <!--<li><a href="javascript:;" data-toggle="slidebar"><i class="fa fa-image"></i> 图形报表</a>-->
+            <!--<ul id="bjui-hnav-tree5" class="ztree ztree_main" data-toggle="ztree" data-on-click="MainMenuClick" data-expand-all="true" data-noinit="true">-->
+                <!--<li data-id="5" data-pid="0">图形报表</li>-->
+                <!--<li data-id="51" data-pid="5" data-url="highcharts.html" data-tabid="chart">Highcharts图表</li>-->
+                <!--<li data-id="52" data-pid="5" data-url="echarts.html" data-tabid="echarts">ECharts图表</li>-->
+            <!--</ul>-->
+        <!--</li>-->
+        <!--<li><a href="javascript:;" data-toggle="slidebar"><i class="fa fa-coffee"></i> 框架组件</a>-->
+            <!--<ul id="bjui-hnav-tree6" class="ztree ztree_main" data-toggle="ztree" data-on-click="MainMenuClick" data-expand-all="true" data-noinit="true">-->
+                <!--<li data-id="6" data-pid="0">框架组件</li>-->
+                <!--<li data-id="61" data-pid="6" data-url="tabs.html" data-tabid="tabs">选项卡</li>-->
+            <!--</ul>-->
+        <!--</li>-->
+        <!--<li><a href="javascript:;" data-toggle="slidebar"><i class="fa fa-bug"></i> 其他插件</a>-->
+            <!--<ul id="bjui-hnav-tree6" class="ztree ztree_main" data-toggle="ztree" data-on-click="MainMenuClick" data-expand-all="true" data-noinit="true">-->
+                <!--<li data-id="7" data-pid="0">其他插件</li>-->
+                <!--<li data-id="71" data-pid="7" data-url="ztree.html" data-tabid="ztree">zTree</li>-->
+                <!--<li data-id="72" data-pid="7" data-url="ztree-select.html" data-tabid="ztree-select">zTree下拉选择</li>-->
+            <!--</ul>-->
+        <!--</li>-->
+        <!--<li><a href="javascript:;" data-toggle="slidebar"><i class="fa fa-database"></i> 综合应用</a>-->
+            <!--<ul id="bjui-hnav-tree8" class="ztree ztree_main" data-toggle="ztree" data-on-click="MainMenuClick" data-expand-all="true" data-noinit="true">-->
+                <!--<li data-id="8" data-pid="0">综合应用</li>-->
+                <!--<li data-id="80" data-pid="8" data-url="table-layout.html" data-tabid="table-layout">局部刷新1</li>-->
+            <!--</ul>-->
+        <!--</li>-->
+        <!--<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cog"></i> 系统设置 <span class="caret"></span></a>-->
+            <!--<ul class="dropdown-menu" role="menu">-->
+                <!--<li><a href="#">角色权限</a></li>-->
+                <!--<li><a href="#">用户列表</a></li>-->
+                <!--<li class="divider"></li>-->
+                <!--<li><a href="#">关于我们</a></li>-->
+                <!--<li class="divider"></li>-->
+                <!--<li><a href="#">友情链接</a></li>-->
+            <!--</ul>-->
+        <!--</li>-->
+    <!--</ul>-->
+    <!--<form class="hnav-form">-->
+        <!--<div class="input-group">-->
+            <!--<input type="text" class="form-control" placeholder="Search...">-->
+                <!--<span class="input-group-btn">-->
+                    <!--<button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>-->
+                <!--</span>-->
+        <!--</div>-->
+    <!--</form>-->
+<!--</div>-->
 <div id="bjui-container" class="clearfix">
     <div id="bjui-leftside">
         <div id="bjui-sidebar-s">

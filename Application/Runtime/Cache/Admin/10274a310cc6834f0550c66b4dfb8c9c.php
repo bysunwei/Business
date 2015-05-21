@@ -9,6 +9,7 @@
                     <input type="text" name="name" id="j_dialog_name" value="<?php echo ($navinfo["name"]); ?>" data-rule="required" size="20">
                 </td>
             </tr>
+
             <tr>
                 <td>
                     <label for="j_dialog_show" class="control-label x90">是否显示：</label>

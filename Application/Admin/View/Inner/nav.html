@@ -51,7 +51,7 @@
         <tr>
             <th data-order-field="id" align="center">编号</th>
             <th>名称</th>
-            <th>显示</th>
+            <th>显示/隐藏</th>
             <th data-order-field="sex">链接地址</th>
             <th width="26"><input type="checkbox" class="checkboxCtrl" data-group="ids" data-toggle="icheck"></th>
             <th width="100">操作</th>
@@ -62,8 +62,8 @@
         <tr data-id="{$vonav.id}">
             <td align="center">{$vonav.id}</td>
             <td>{$vonav.name}</td>
-            <td><if condition="$vonav.isshow eq 0">不显示<else/>显示</if></td>
-            <td>index.html</td>
+            <td><if condition="$vonav.isshow eq 0">隐藏<else/>显示</if></td>
+            <td>{$vonav.url}</td>
             <td><input type="checkbox" name="ids" data-toggle="icheck" value="{$vonav.id}"></td>
             <td>
                 <a href="__CONTROLLER__/editnav?id={$vonav.id}" class="btn btn-green" data-toggle="dialog" data-id="form" data-reload-warn="本页已有打开的内容，确定将刷新本页内容，是否继续？" data-title="编辑-{$vonav.name}">编辑</a>

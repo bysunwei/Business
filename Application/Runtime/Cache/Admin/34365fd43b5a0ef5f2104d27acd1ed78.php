@@ -49,11 +49,11 @@
     </div>
 </div>
 <div class="bjui-pageContent">
-    <table class="table table-bordered table-hover table-striped table-top" data-selected-multi="true">
+    <table class="table table-bordered table-hover table-striped table-top" data-selected-multi="false">
         <thead>
         <tr>
             <th data-order-field="id" align="center">编号</th>
-            <th>名称</th>
+            <th>导航名称</th>
             <th>显示/隐藏</th>
             <th data-order-field="sex">链接地址</th>
             <th width="26"><input type="checkbox" class="checkboxCtrl" data-group="ids" data-toggle="icheck"></th>

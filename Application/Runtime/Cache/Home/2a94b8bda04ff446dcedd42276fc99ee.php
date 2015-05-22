@@ -179,8 +179,7 @@
         <div class="col-lg-4 borderleft">
             <h3>畅哲动态</h3>
             <ul>
-                <li><a href="###">自动发货系统正式上线测试</a><span>2015-05-03</span></li>
-
+                <?php if(is_array($dylist)): $i = 0; $__LIST__ = $dylist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vody): $mod = ($i % 2 );++$i;?><li><a href="<?php echo ($vody["url"]); ?>"><?php echo ($vody["name"]); ?></a><span><?php echo ($vody["time"]); ?></span></li><?php endforeach; endif; else: echo "" ;endif; ?>
             </ul>
             <a>查看详细 &gt;&gt;</a>
         </div>

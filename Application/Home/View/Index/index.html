@@ -187,8 +187,9 @@
         <div class="col-lg-4 borderleft">
             <h3>畅哲动态</h3>
             <ul>
-                <li><a href="###">自动发货系统正式上线测试</a><span>2015-05-03</span></li>
-
+                <volist name="dylist" id="vody">
+                    <li><a href="{$vody.url}">{$vody.name}</a><span>{$vody.time}</span></li>
+                </volist>
             </ul>
             <a>查看详细 &gt;&gt;</a>
         </div>

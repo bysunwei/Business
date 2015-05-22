@@ -2190,3 +2190,142 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000418s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000530s ]
 
+[ 2015-05-22T11:12:55+08:00 ] 127.0.0.1 /index.php/Home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `peter_ad` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `peter_ad` WHERE `ad_position` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `peter_ad` WHERE `ad_position` = 2  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `peter_ad` WHERE `ad_position` = 3  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+SQL: SHOW COLUMNS FROM `peter_nav` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `peter_nav` WHERE `isshow` = '1' AND `pid` = 0  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `peter_nav` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `peter_nav` WHERE `isshow` = '1' AND `pid` = 0  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `peter_nav` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `peter_nav` WHERE ( 1=1 AND pid='2' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `peter_nav` WHERE ( 1=1 AND pid='10' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `peter_nav` WHERE ( 1=1 AND pid='11' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `peter_nav` WHERE ( 1=1 AND pid='12' )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.042956s ]
+SQL: SHOW COLUMNS FROM `peter_nav` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `peter_nav` WHERE `pid` = 7 AND `isshow` = '1'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `peter_nav` WHERE `pid` = 9 AND `isshow` = '1'  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000451s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029644s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000597s ]
+
+[ 2015-05-22T12:03:36+08:00 ] 127.0.0.1 /index.php/Home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000887s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001284s ]
+SQL: SHOW COLUMNS FROM `peter_ad` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `peter_ad` WHERE `ad_position` = 1  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `peter_ad` WHERE `ad_position` = 2  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `peter_ad` WHERE `ad_position` = 3  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `peter_dynamic` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `peter_dynamic` WHERE ( isshow='1' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+SQL: SHOW COLUMNS FROM `peter_nav` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `peter_nav` WHERE `isshow` = '1' AND `pid` = 0  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `peter_nav` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `peter_nav` WHERE `isshow` = '1' AND `pid` = 0  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `peter_nav` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `peter_nav` WHERE ( 1=1 AND pid='2' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `peter_nav` WHERE ( 1=1 AND pid='10' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `peter_nav` WHERE ( 1=1 AND pid='11' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `peter_nav` WHERE ( 1=1 AND pid='12' )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.042165s ]
+SQL: SHOW COLUMNS FROM `peter_nav` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `peter_nav` WHERE `pid` = 7 AND `isshow` = '1'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `peter_nav` WHERE `pid` = 9 AND `isshow` = '1'  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015338s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000416s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015338s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000602s ]
+
+[ 2015-05-22T12:06:22+08:00 ] 127.0.0.1 /index.php/Home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001253s ]
+SQL: SHOW COLUMNS FROM `peter_ad` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `peter_ad` WHERE `ad_position` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `peter_ad` WHERE `ad_position` = 2  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `peter_ad` WHERE `ad_position` = 3  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `peter_dynamic` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `peter_dynamic` WHERE ( isshow='1' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000305s ]
+SQL: SHOW COLUMNS FROM `peter_nav` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `peter_nav` WHERE `isshow` = '1' AND `pid` = 0  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `peter_nav` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `peter_nav` WHERE `isshow` = '1' AND `pid` = 0  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `peter_nav` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `peter_nav` WHERE ( 1=1 AND pid='2' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `peter_nav` WHERE ( 1=1 AND pid='10' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `peter_nav` WHERE ( 1=1 AND pid='11' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `peter_nav` WHERE ( 1=1 AND pid='12' )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.043945s ]
+SQL: SHOW COLUMNS FROM `peter_nav` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `peter_nav` WHERE `pid` = 7 AND `isshow` = '1'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `peter_nav` WHERE `pid` = 9 AND `isshow` = '1'  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014887s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000412s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+

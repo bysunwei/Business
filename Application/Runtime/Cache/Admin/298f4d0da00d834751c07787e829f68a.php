@@ -83,13 +83,13 @@
 
 </div>
 <div class="bjui-pageContent">
-    <table class="table table-bordered table-hover table-striped table-top" data-selected-multi="true">
+    <table class="table table-bordered table-hover table-striped table-top" data-selected-multi="false">
         <thead>
         <tr>
             <th data-order-field="id" align="center">编号</th>
-            <th align="center">名称</th>
+            <th align="center">广告名称</th>
             <th align="center">显示/隐藏</th>
-            <th align="center" data-order-field="sex">链接地址</th>
+            <th align="center" data-order-field="sex">广告地址</th>
             <th align="center" data-order-field="sex">广告位置</th>
             <th width="26"><input type="checkbox" class="checkboxCtrl" data-group="ids" data-toggle="icheck"></th>
             <th width="100">操作</th>

@@ -15,6 +15,8 @@ class IndexController extends Controller {
             $newad[$a][$b]=$value;
         }
         $this->assign('newad',$newad);
+
+        $this->dylist=M("Dynamic")->where("isshow='1'")->select();
         $this->display();
     }
 }

@@ -23,11 +23,8 @@ class InnerController extends CommonController {
     }
     public function updatenav(){
         $arr = array (
-            'navTabId'=>"inner-nav",
-            'rel'=>"",
-            "callbackType"=>"closeCurrent",
-            "forwardUrl"=>"",
-            'confirMsg'=>""
+            'tabid'=>"inner-nav",
+            "closeCurrent"=>"close",
         );
         $m=M("nav");
         $data=$m->create();
@@ -50,11 +47,8 @@ class InnerController extends CommonController {
     }
     public function addad(){
         $arr = array (
-            'navTabId'=>"inner-ad",
-            'rel'=>"",
-            "callbackType"=>"closeCurrent",
-            "forwardUrl"=>"",
-            'confirMsg'=>""
+            'tabid'=>"inner-ad",
+            "closeCurrent"=>"close",
         );
         $ad=M("Ad");
         if($_FILES)
@@ -108,11 +102,8 @@ class InnerController extends CommonController {
     }
     public function updatead(){
         $arr = array (
-            'navTabId'=>"inner-ad",
-            'rel'=>"",
-            "callbackType"=>"closeCurrent",
-            "forwardUrl"=>"",
-            'confirMsg'=>""
+            'tabid'=>"inner-ad",
+            "closeCurrent"=>"close",
         );
         $ad=M("Ad");
         if($_FILES['ad_img']['name'])
@@ -172,11 +163,8 @@ class InnerController extends CommonController {
     }
     public function addnav(){
         $arr = array (
-            'navTabId'=>"inner-nav",
-            'rel'=>"",
-            "callbackType"=>"closeCurrent",
-            "forwardUrl"=>"",
-            'confirMsg'=>""
+            'tabid'=>"inner-nav",
+            "closeCurrent"=>"close",
         );
         $nav=M("Nav");
         if(!$nav->create())
@@ -195,6 +183,58 @@ class InnerController extends CommonController {
                 $arr["message"]="新导航添加失败";
                 $this->ajaxReturn($arr);
             }
+        }
+    }
+    public function dynamic(){
+        $this->dylist=M("Dynamic")->select();
+        $this->display();
+    }
+    public function adddy(){
+        $arr = array (
+            'tabid'=>"inner-dynamic",
+            "closeCurrent"=>"close",
+        );
+        $nav=M("Dynamic");
+        if(!$nav->create())
+        {
+            $arr["statusCode"]=200;
+            $arr["message"]=$nav->getError();
+            $this->ajaxReturn($arr);
+        }else{
+            if($nav->add())
+            {
+                $arr["statusCode"]=200;
+                $arr["message"]="新动态添加成功";
+                $this->ajaxReturn($arr);
+            }else{
+                $arr["statusCode"]=300;
+                $arr["message"]="新动态添加失败";
+                $this->ajaxReturn($arr);
+            }
+        }
+    }
+    public function editdy(){
+        $m=M("Dynamic");
+        $where["id"]=I("get.id");
+        $dyinfo=$m->where($where)->find();
+        $this->assign("dyinfo",$dyinfo);
+        $this->display();
+    }
+    public function updatedy(){
+        $arr = array (
+            'tabid'=>"inner-dynamic",
+            "closeCurrent"=>"close",
+        );
+        $m=M("Dynamic");
+        $data=$m->create();
+        if($m->save($data)){
+            $arr["statusCode"]=200;
+            $arr["message"]="动态修改成功";
+            $this->ajaxReturn($arr);
+        }else{
+            $arr["statusCode"]=300;
+            $arr["message"]="动态修改失败";
+            $this->ajaxReturn($arr);
         }
     }
 }

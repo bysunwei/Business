@@ -1,0 +1,42 @@
+<div class="bjui-pageContent">
+    <form action="__CONTROLLER__/adddy" class="pageForm" data-toggle="validate"   >
+        <table class="table table-condensed table-hover">
+            <tbody>
+            <tr>
+                <td>
+                    <label for="j_dialog_name" class="control-label x90">动态内容：</label>
+                    <input type="text" name="name" id="j_dialog_name" value="" data-rule="required" size="20">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="j_dialog_time" class="control-label x90">上线时间：</label>
+                   <!-- <input type="text" name="level" id="j_dialog_level" value="0" data-rule="required" size="20" readonly>-->
+                    <input type="text" name="time" id="j_dialog_time" value="" data-toggle="datepicker" data-rule="required;date" size="15">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="j_dialog_show" class="control-label x90">是否显示：</label>
+                    <select name="isshow" id="j_dialog_show" data-toggle="selectpicker">
+                        <option value="0" >隐藏</option>
+                        <option value="1" >显示</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="j_dialog_url" class="control-label x90">动态地址：</label>
+                    <input type="text" name="url" id="j_dialog_url" value="" size="20">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+<div class="bjui-pageFooter">
+    <ul>
+        <li><button type="button" class="btn-close">关闭</button></li>
+        <li><button type="submit" class="btn-default">保存</button></li>
+    </ul>
+</div>

@@ -53,12 +53,12 @@
 <!--产品介绍-->
 <div class="marketing">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-2 col-lg-offset-1" style="border: none">
-                <a href="###" style="display: block"><img class="img-rounded" src="/img/1.png" alt="自动发货系统" ></a>
-                <p><a href="2.html" target="_blank">MES系统</a></p>
-            </div>
-            <div class="col-lg-2 ">
+        <?php if(is_array($adlist1)): $i = 0; $__LIST__ = $adlist1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$voad1): $mod = ($i % 2 );++$i;?><div class="col-lg-2 col-lg-offset-1" style="border: none; padding-bottom: 20px">
+                <a href="<?php echo ($voad1["ad_link"]); ?>" style="display: block"><img class="img-rounded" src="/test/<?php echo ($voad1["ad_img"]); ?>" alt="<?php echo ($voad1["name"]); ?>" ></a>
+                <p><a href="<?php echo ($voad1["ad_link"]); ?>" target="_blank"><?php echo ($voad1["name"]); ?></a></p>
+            </div><?php endforeach; endif; else: echo "" ;endif; ?>
+
+            <!--<div class="col-lg-2 ">
                 <a href="2.html" target="_blank"><img class="img-rounded" src="/img/2.png" alt="自动发货系统"></a>
                 <p><a href="2.html" target="_blank">自动化系统</a></p>
             </div>
@@ -74,8 +74,7 @@
                 <a href="###"><img class="img-rounded" src="/img/5.png" alt="自动发货系统" ></a>
                 <p><a href="###">成本管理自动化系统</a></p>
             </div>
-        </div>
-        <div class="row">
+
             <div class="col-lg-2 col-lg-offset-1" style="border: none">
                 <a href="###"><img class="img-rounded" src="/img/6.png" alt="自动发货系统" ></a>
                 <p><a href="###">MES系统</a></p>
@@ -96,7 +95,7 @@
                 <a href="###"><img class="img-rounded" src="/img/7.png" alt="自动发货系统" ></a>
                 <p><a>成本管理自动化系统</a></p>
             </div>
-        </div>
+-->
     </div>
 </div>
 <div class="container Example grid">
@@ -141,15 +140,10 @@
         <div class="col-lg-11 col-lg-offset-1">
             <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
-                    <div class="item active" >
-                        <img src="/img/hcase_logo2.jpg" alt="..." class="col-lg-2" >
-                        <img src="/img/hcase_logo3.jpg" alt="..." class="col-lg-2">
-                        <img src="/img/hcase_logo4.jpg" alt="..." class="col-lg-2">
-                        <img src="/img/hcase_logo8.jpg" alt="..." class="col-lg-2">
-                        <img src="/img/hcase_logo9.jpg" alt="..." class="col-lg-2">
-
-                    </div>
-                    <div class="item" >
+                    <?php if(is_array($newad)): $newk = 0; $__LIST__ = $newad;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$voad2): $mod = ($newk % 2 );++$newk;?><div <?php if($newk == 1): ?>class="item active"<?php else: ?>class="item"<?php endif; ?>  >
+                        <?php if(is_array($voad2)): $i = 0; $__LIST__ = $voad2;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$voad2_1): $mod = ($i % 2 );++$i;?><img src="/test/<?php echo ($voad2_1["ad_img"]); ?>" alt="..." class="col-lg-2" ><?php endforeach; endif; else: echo "" ;endif; ?>
+                    </div><?php endforeach; endif; else: echo "" ;endif; ?>
+                  <!--  <div class="item" >
                         <img src="/img/hcase_logo11.jpg" alt="..." class="col-lg-2" >
                         <img src="/img/hcase_logo13.jpg" alt="..." class="col-lg-2">
                         <img src="/img/hcase_logo4.jpg" alt="..." class="col-lg-2">
@@ -162,7 +156,7 @@
                         <img src="/img/hcase_logo4.jpg" alt="..." class="col-lg-2">
                         <img src="/img/hcase_logo8.jpg" alt="..." class="col-lg-2">
                         <img src="/img/hcase_logo9.jpg" alt="..." class="col-lg-2">
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>

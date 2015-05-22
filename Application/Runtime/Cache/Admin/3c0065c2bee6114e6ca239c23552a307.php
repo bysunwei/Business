@@ -27,7 +27,7 @@
             <tr>
                 <td>
                     <label for="j_dialog_link" class="control-label x90">链接地址：</label>
-                    <input type="text" name="link" id="j_dialog_link" value="<?php echo ($adinfo["ad_link"]); ?>" size="20">
+                    <input type="text" name="ad_link" id="j_dialog_link" value="<?php echo ($adinfo["ad_link"]); ?>" size="20">
                 </td>
             </tr>
             </tbody>

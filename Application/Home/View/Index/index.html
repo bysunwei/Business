@@ -55,12 +55,14 @@
 <!--产品介绍-->
 <div class="marketing">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-2 col-lg-offset-1" style="border: none">
-                <a href="###" style="display: block"><img class="img-rounded" src="__ROOT__/img/1.png" alt="自动发货系统" ></a>
-                <p><a href="2.html" target="_blank">MES系统</a></p>
+        <volist name="adlist1" id="voad1">
+            <div class="col-lg-2 col-lg-offset-1" style="border: none; padding-bottom: 20px">
+                <a href="{$voad1.ad_link}" style="display: block"><img class="img-rounded" src="__ROOT__/test/{$voad1.ad_img}" alt="{$voad1.name}" ></a>
+                <p><a href="{$voad1.ad_link}" target="_blank">{$voad1.name}</a></p>
             </div>
-            <div class="col-lg-2 ">
+        </volist>
+
+            <!--<div class="col-lg-2 ">
                 <a href="2.html" target="_blank"><img class="img-rounded" src="__ROOT__/img/2.png" alt="自动发货系统"></a>
                 <p><a href="2.html" target="_blank">自动化系统</a></p>
             </div>
@@ -76,8 +78,7 @@
                 <a href="###"><img class="img-rounded" src="__ROOT__/img/5.png" alt="自动发货系统" ></a>
                 <p><a href="###">成本管理自动化系统</a></p>
             </div>
-        </div>
-        <div class="row">
+
             <div class="col-lg-2 col-lg-offset-1" style="border: none">
                 <a href="###"><img class="img-rounded" src="__ROOT__/img/6.png" alt="自动发货系统" ></a>
                 <p><a href="###">MES系统</a></p>
@@ -98,7 +99,7 @@
                 <a href="###"><img class="img-rounded" src="__ROOT__/img/7.png" alt="自动发货系统" ></a>
                 <p><a>成本管理自动化系统</a></p>
             </div>
-        </div>
+-->
     </div>
 </div>
 <div class="container Example grid">
@@ -143,15 +144,14 @@
         <div class="col-lg-11 col-lg-offset-1">
             <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
-                    <div class="item active" >
-                        <img src="__ROOT__/img/hcase_logo2.jpg" alt="..." class="col-lg-2" >
-                        <img src="__ROOT__/img/hcase_logo3.jpg" alt="..." class="col-lg-2">
-                        <img src="__ROOT__/img/hcase_logo4.jpg" alt="..." class="col-lg-2">
-                        <img src="__ROOT__/img/hcase_logo8.jpg" alt="..." class="col-lg-2">
-                        <img src="__ROOT__/img/hcase_logo9.jpg" alt="..." class="col-lg-2">
-
+                    <volist name="newad" id="voad2" key="newk">
+                    <div <if condition="$newk eq 1">class="item active"<else/>class="item"</if>  >
+                        <volist name="voad2" id="voad2_1">
+                            <img src="__ROOT__/test/{$voad2_1.ad_img}" alt="..." class="col-lg-2" >
+                        </volist>
                     </div>
-                    <div class="item" >
+                    </volist>
+                  <!--  <div class="item" >
                         <img src="__ROOT__/img/hcase_logo11.jpg" alt="..." class="col-lg-2" >
                         <img src="__ROOT__/img/hcase_logo13.jpg" alt="..." class="col-lg-2">
                         <img src="__ROOT__/img/hcase_logo4.jpg" alt="..." class="col-lg-2">
@@ -164,7 +164,7 @@
                         <img src="__ROOT__/img/hcase_logo4.jpg" alt="..." class="col-lg-2">
                         <img src="__ROOT__/img/hcase_logo8.jpg" alt="..." class="col-lg-2">
                         <img src="__ROOT__/img/hcase_logo9.jpg" alt="..." class="col-lg-2">
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>

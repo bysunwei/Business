@@ -1,5 +1,5 @@
 <div class="bjui-pageContent">
-    <form action="__CONTROLLER__/addad" class="pageForm" data-toggle="validate"  enctype="multipart/form-data" >
+    <form action="__CONTROLLER__/addad" class="pageForm" data-toggle="validate"  enctype="multipart/form-data"   data-reload-navtab="true">
         <table class="table table-condensed table-hover">
             <tbody>
             <tr>
@@ -13,6 +13,8 @@
                     <label for="j_dialog_position" class="control-label x90">位置：</label>
                     <select name="ad_position" id="j_dialog_position" data-toggle="selectpicker">
                         <option value="1">首页幻灯片</option>
+                        <option value="2">首页业务</option>
+                        <option value="3">首页客户链接</option>
                     </select>
                 </td>
             </tr>
@@ -24,8 +26,8 @@
             </tr>
             <tr>
                 <td>
-                    <label for="j_dialog_url" class="control-label x90">链接地址：</label>
-                    <input type="text" name="ad_url" id="j_dialog_url" value="{$navinfo.url}" size="20">
+                    <label for="j_dialog_link" class="control-label x90">链接地址：</label>
+                    <input type="text" name="ad_link" id="j_dialog_link" value="" size="20">
                 </td>
             </tr>
             </tbody>

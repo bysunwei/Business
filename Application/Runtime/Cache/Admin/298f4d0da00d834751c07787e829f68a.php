@@ -78,7 +78,7 @@
             </div>
         </form>-->
     <div style="float: right">
-        <a href="/index.php/Admin/Inner/insertad" class="btn btn-blue" data-toggle="dialog" data-title="新增广告">新增</a>
+        <a href="/index.php/Admin/Inner/insertad" class="btn btn-blue" data-toggle="dialog" data-title="新增广告" data-mask="true">新增</a>
     </div>
 
 </div>
@@ -87,9 +87,10 @@
         <thead>
         <tr>
             <th data-order-field="id" align="center">编号</th>
-            <th>名称</th>
-            <th>显示/隐藏</th>
-            <th data-order-field="sex">链接地址</th>
+            <th align="center">名称</th>
+            <th align="center">显示/隐藏</th>
+            <th align="center" data-order-field="sex">链接地址</th>
+            <th align="center" data-order-field="sex">广告位置</th>
             <th width="26"><input type="checkbox" class="checkboxCtrl" data-group="ids" data-toggle="icheck"></th>
             <th width="100">操作</th>
         </tr>
@@ -97,9 +98,14 @@
         <tbody>
         <?php if(is_array($adlist)): $i = 0; $__LIST__ = $adlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$voad): $mod = ($i % 2 );++$i;?><tr data-id="<?php echo ($voad["id"]); ?>">
                 <td align="center"><?php echo ($voad["id"]); ?></td>
-                <td><?php echo ($voad["name"]); ?></td>
+                <td align="center"><?php echo ($voad["name"]); ?></td>
                 <td align="center"><img src="/test/<?php echo ($voad["ad_img"]); ?>" alt="..." class="img-rounded " height="20" )  ></td>
-                <td><?php echo ($voad["link"]); ?></td>
+                <td align="center"><?php echo ($voad["ad_link"]); ?></td>
+                <td align="center">
+                    <?php switch($voad["ad_position"]): case "1": ?>首页幻灯片<?php break;?>
+                        <?php case "2": ?>首页业务<?php break;?>
+                        <?php case "3": ?>首页客户链接<?php break; endswitch;?>
+                </td>
                 <td><input type="checkbox" name="ids" data-toggle="icheck" value="<?php echo ($vonav["id"]); ?>"></td>
                 <td>
                     <a href="/index.php/Admin/Inner/editad?id=<?php echo ($voad["id"]); ?>" class="btn btn-green" data-toggle="dialog" data-id="form" data-reload-warn="本页已有打开的内容，确定将刷新本页内容，是否继续？" data-title="编辑-<?php echo ($voad["name"]); ?>">编辑</a>

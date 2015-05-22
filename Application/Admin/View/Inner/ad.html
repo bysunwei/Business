@@ -78,7 +78,7 @@
             </div>
         </form>-->
     <div style="float: right">
-        <a href="__CONTROLLER__/insertad" class="btn btn-blue" data-toggle="dialog" data-title="新增广告">新增</a>
+        <a href="__CONTROLLER__/insertad" class="btn btn-blue" data-toggle="dialog" data-title="新增广告" data-mask="true">新增</a>
     </div>
 
 </div>
@@ -87,9 +87,10 @@
         <thead>
         <tr>
             <th data-order-field="id" align="center">编号</th>
-            <th>名称</th>
-            <th>显示/隐藏</th>
-            <th data-order-field="sex">链接地址</th>
+            <th align="center">名称</th>
+            <th align="center">显示/隐藏</th>
+            <th align="center" data-order-field="sex">链接地址</th>
+            <th align="center" data-order-field="sex">广告位置</th>
             <th width="26"><input type="checkbox" class="checkboxCtrl" data-group="ids" data-toggle="icheck"></th>
             <th width="100">操作</th>
         </tr>
@@ -98,9 +99,16 @@
         <volist name="adlist" id="voad">
             <tr data-id="{$voad.id}">
                 <td align="center">{$voad.id}</td>
-                <td>{$voad.name}</td>
+                <td align="center">{$voad.name}</td>
                 <td align="center"><img src="__ROOT__/test/{$voad.ad_img}" alt="..." class="img-rounded " height="20" )  ></td>
-                <td>{$voad.link}</td>
+                <td align="center">{$voad.ad_link}</td>
+                <td align="center">
+                    <switch name="voad.ad_position">
+                        <case value="1" >首页幻灯片</case>
+                        <case value="2" >首页业务</case>
+                        <case value="3" >首页客户链接</case>
+                    </switch>
+                </td>
                 <td><input type="checkbox" name="ids" data-toggle="icheck" value="{$vonav.id}"></td>
                 <td>
                     <a href="__CONTROLLER__/editad?id={$voad.id}" class="btn btn-green" data-toggle="dialog" data-id="form" data-reload-warn="本页已有打开的内容，确定将刷新本页内容，是否继续？" data-title="编辑-{$voad.name}">编辑</a>
